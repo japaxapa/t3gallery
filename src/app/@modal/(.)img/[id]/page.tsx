@@ -1,5 +1,5 @@
 import { Modal } from "./modal";
-import FullPageImageView from "~/components/full-image-page";
+import FullPageImageView from "~/common/full-image-page";
 
 export default async function PhotoModal({
   params,
@@ -13,7 +13,7 @@ export default async function PhotoModal({
 
   return (
     <Modal>
-      <FullPageImageView id={idAsNumber} />
+      <FullPageImageView photoId={idAsNumber} />
     </Modal>
   );
 }
